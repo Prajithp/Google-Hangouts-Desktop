@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Hangouts
+Icon=hangoutsfordesktop
+Exec=/opt/HangoutsForDesktop/Hangouts
+Comment=Hangouts for Desktop
+Categories=Network;Chat;
+Terminal=false
