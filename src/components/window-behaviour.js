@@ -2,6 +2,7 @@ var gui = window.require('nw.gui');
 var platform = require('./platform');
 var settings = require('./settings');
 var utils = require('./utils');
+var dispatcher = require('./dispatcher');
 
 module.exports = {
   /**
@@ -103,7 +104,7 @@ module.exports = {
    * Set an interval to sync the badge and the title.
    */
  syncBadgeAndTitle: function(win, parentDoc, childDoc) {
-    var notifCountRegex = /\((\d)\)/;
+    var notifCountRegex = /\s*(says)\s*/;
 
     setInterval(function() {
       // Sync title
